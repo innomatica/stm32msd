@@ -1,0 +1,15 @@
+# general files and folders
+build/
+Debug/
+Release/
+*.bak
+*.obj
+*.log
+tags
+
+# doxygen output
+Doc/html
+
+# python specific files and folders
+__pycache__/
+*.pyc

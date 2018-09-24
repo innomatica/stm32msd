@@ -1,0 +1,67 @@
+Configuration	stm32msd
+STM32CubeMX 	4.27.0
+Date	09/24/2018
+MCU	STM32L432KCUx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN (PC14)
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT (PC15)
+SPI1	Full-Duplex Master	SPI1_MISO	PA6
+SPI1	Full-Duplex Master	SPI1_MOSI	PA7
+SPI1	Full-Duplex Master	SPI1_SCK	PA1
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK-SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS-SWDIO)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART2	Asynchronous	USART2_RX	PA15 (JTDI)
+USART2	Asynchronous	USART2_TX	PA2
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC14-OSC32_IN (PC14)	RCC_OSC32_IN	
+3	PC15-OSC32_OUT (PC15)	RCC_OSC32_OUT	
+6	PA0	GPIO_EXTI0	BTN
+7	PA1	SPI1_SCK	
+8	PA2	USART2_TX	VCP_TX
+12	PA6	SPI1_MISO	
+13	PA7	SPI1_MOSI	
+14	PB0	GPIO_Output	MEM_CS
+21	PA11	USB_DM	
+22	PA12	USB_DP	
+23	PA13 (JTMS-SWDIO)	SYS_JTMS-SWDIO	SWDIO
+24	PA14 (JTCK-SWCLK)	SYS_JTCK-SWCLK	SWCLK
+25	PA15 (JTDI)	USART2_RX	VCP_RX
+26	PB3 (JTDO-TRACESWO)	GPIO_Output	LD3 [Green]
+27	PB4 (NJTRST)	GPIO_Output	LD2
+28	PB5	GPIO_Output	LD1
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : stm32msd
+Project Folder : /home/sungjune/Projects/public/stm32msd
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_L4 V1.13.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
